@@ -1045,7 +1045,7 @@ class RCTVideo: UIView, RCTVideoPlayerViewControllerDelegate, RCTPlayerObserverH
     func createPlayerViewController(player: AVPlayer, withPlayerItem _: AVPlayerItem) -> RCTVideoPlayerViewController {
         let viewController = RCTVideoPlayerViewController()
         viewController.showsPlaybackControls = self._controls
-        viewController.updatesNowPlayingInfoCenter = false
+        // viewController.updatesNowPlayingInfoCenter = false
         viewController.rctDelegate = self
         viewController.preferredOrientation = _fullscreenOrientation
 
