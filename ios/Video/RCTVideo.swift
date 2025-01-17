@@ -1719,18 +1719,18 @@ class RCTVideo: UIView, RCTVideoPlayerViewControllerDelegate, RCTPlayerObserverH
 
     @objc
     func enterPictureInPicture() {
-        if _pip?._pipController == nil {
-            initPictureinPicture()
-            _playerViewController?.allowsPictureInPicturePlayback = true
-        }
-        _pip?.enterPictureInPicture()
+        // if _pip?._pipController == nil {
+        //     initPictureinPicture()
+        //     _playerViewController?.allowsPictureInPicturePlayback = true
+        // }
+        // _pip?.enterPictureInPicture()
     }
 
     @objc
     func exitPictureInPicture() {
         guard isPictureInPictureActive() else { return }
 
-        _pip?.exitPictureInPicture()
+        // _pip?.exitPictureInPicture()
         #if os(iOS)
             if _enterPictureInPictureOnLeave {
                 initPictureinPicture()
